@@ -19,13 +19,13 @@ from tensorflow.keras.layers import Conv2D, BatchNormalization, MaxPool2D, Globa
 from tensorflow.keras.applications.resnet50 import ResNet50
 
 # directory containing data, train test file split
-DATADIR = "/data"
+DATADIR = "/home/abp4h/Geoguessr_Project/data/"
 # directory containing combined location data folders
-DATACOMBINED = DATADIR + "/ready_data"
+DATACOMBINED = DATADIR + "ready_data/"
 # directory containing polygon gird shapes
-POLYDIR = "/data" 
+POLYDIR = "/home/abp4h/Geoguessr_Project/data/" 
 # directory to store/load model in/from
-MODELDIR = "/data/models"
+MODELDIR = "/home/abp4h/Geoguessr_Project/data/models/"
 
 # NOTE: The data found in these locations are sample. Look at the drive for all data
 
@@ -102,6 +102,7 @@ class Geoguessr:
             
         self.model.summary()
         self.loss = loss
+        pickle.dump(model, open('data/pickled_data/trained_model.pickle', 'wb'))
         
     def readData(self, fileNames, dataDir):
         '''
@@ -116,7 +117,7 @@ class Geoguessr:
                                          for i in os.listdir(dataDir+x)], 
                               fileNames)))
         # load grid numbers from folder names and convert them to categorical ouput vectors
-        y = tf.keras.utils.to_categorical(list(map(lambda x:int(x.split('+')[0]), fileNames)), 
+        y = tf.keras.utils.to_categorical(list(map(lambda x:int(x.split('_')[0]), fileNames)), 
                                   num_classes=numClasses)
         return X,y
     
