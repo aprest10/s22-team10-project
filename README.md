@@ -1,5 +1,5 @@
 # s22-team10-project
-### Team Members: Andrew Preston, Matt Fadler, Riley Welch, Yassaman Nassiri, Jansen Long
+<p align='center'> **Team Members:**<br> Andrew Preston<br> Matt Fadler<br> Riley Welch<br> Yassaman Nassiri<br> Jansen Long<p>
 <br>
 
 # GEOGUESSR PROJECT
