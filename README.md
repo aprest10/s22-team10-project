@@ -3,4 +3,4 @@
 ---
 <br>
 
-# **GEOGUESSR PROJECT**
+# GEOGUESSR PROJECT
