@@ -2,6 +2,7 @@
 <h1 align='center'> GEOGUESSR PROJECT</h1>
 <p align='center'> <strong>Team Members:</strong><br> Andrew Preston<br> Matt Fadler<br> Riley Welch<br> Yassaman Nassiri<br> Jansen Long<p>
 <br>
+
 ### Overview
 ---
 ##### Grid Making
