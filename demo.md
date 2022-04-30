@@ -180,7 +180,7 @@ plt.show()
 ```
 
 ```python
-pickle.dump(mainlandGrid,open("/home/maf3r/nnproject/geoguessr/data/pickled_data/mainlandGrid.pickle","wb"))
+pickle.dump(mainlandGrid,open("/to/path/mainlandGrid.pickle","wb"))
 ```
 
 ## Data Scrapping
