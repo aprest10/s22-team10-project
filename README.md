@@ -3,11 +3,7 @@
 <p align='center'> <strong>Team Members:</strong><br> Andrew Preston<br> Matt Fadler<br> Riley Welch<br> Yassaman Nassiri<br> Jansen Long<p>
 <br>
   
-<p align='center'>For steps to run the project yourself please see</p>
-
-<div align='center'>
-[DEMO](./demo.md)
-</div>
+<p align='center'>For steps to run the project yourself please see</p>[DEMO](./demo.md)
 
 ### Overview
 ---
