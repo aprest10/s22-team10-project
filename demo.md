@@ -54,8 +54,8 @@ plt.show()
 ```
 
 ```python
-pickle.dump(mainland,open("/nnproject/geoguessr/data/pickled_data/mainland.pickle","wb"))
-mainland = pickle.load(open("/nnproject/geoguessr/data/pickled_data/mainland.pickle", "rb"))
+pickle.dump(mainland,open("/path/to/mainland.pickle","wb"))
+mainland = pickle.load(open("/path/to/mainland.pickle", "rb"))
 mainland = Polygon(np.flip(mainland))
 x,y = mainland.exterior.xy
 plt.plot(x,y)
