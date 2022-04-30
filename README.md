@@ -5,7 +5,9 @@
   
 <p align='center'>For steps to run the project yourself please see</p>
 
+<div align='center'>
 [DEMO](./demo.md)
+</div>
 
 ### Overview
 ---
