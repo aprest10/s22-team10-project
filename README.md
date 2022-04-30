@@ -16,8 +16,4 @@ Using this map data and [datascrapper.ipynb](geoguessr/datascrapper.ipynb) we sc
 After scrapping the data we where left with two folders <ins>training_data</ins> with 1560 unique images and <ins>testing_data</ins> with 390 unique images. In-order to be usable by the model we needed to convert the images into numpy arrays. Using the [load_data.ipynb](geoguessr/load_data.ipynb) file we converted to <ins>training_data</ins> images into nparray x_train and <ins>testing_data</ins> images into nparray x_test. We also created nparray y_train and y_test that held the grid section number for each image in its corresponding nparray. This tuple of nparrays were inspired and modeled after the MNIST nparrays used in OLA8 from class.
 
 ##### Model Training
-
-
-
-
-Using a Convolution Neural Network 
+Using a Convolution Neural Network
