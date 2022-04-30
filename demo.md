@@ -195,7 +195,7 @@ import requests
 import json, os
 import urllib.request
 import random
-dataDir = "/nnproject/geoguessr/data/training_data"
+dataDir = "/path/to/training_data"
 ```
 
 ```python
@@ -261,7 +261,7 @@ for grid,coor in mainlandGrid.items():
 
 ```python
 # Change to save images to testing data folder
-dataDir = "/home/maf3r/nnproject/geoguessr/data/testing_data"
+dataDir = "/path/to/testing_data"
 ```
 
 ```python
@@ -322,7 +322,7 @@ from PIL import Image
 import glob
 
 # Load training data images
-filelist = glob.glob('/home/maf3r/nnproject/geoguessr/data/training_data/*.jpg')
+filelist = glob.glob('/path/to/training_data/*.jpg')
 ```
 
 ```python
@@ -336,7 +336,7 @@ plt.imshow(x_train[6])
 
 ```python
 # Load testing data images
-filelist = glob.glob('/home/maf3r/nnproject/geoguessr/data/testing_data/*.jpg')
+filelist = glob.glob('/path/to/testing_data/*.jpg')
 ```
 
 ```python
