@@ -528,5 +528,10 @@ else:
     fa = mx-55
 ```
 
+```python
+# Model's predicted grid location
+fa
+```
+
 
 ![NUmbered Grid](images/numberedGrid.png)
