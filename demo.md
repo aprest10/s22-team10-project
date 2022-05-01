@@ -426,8 +426,14 @@ model.summary()
 keras.utils.plot_model(model,show_shapes=True,expand_nested=True)
 ```
 ![output](/images/15.png)
+## Train model
+[placeholder]
 ## Load model
-
+[placeholder]
+## Run test
+[placeholder]
+## Output
+[placeholder]
 
 
 
