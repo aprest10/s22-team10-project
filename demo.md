@@ -342,6 +342,7 @@ for grid,coor in mainlandGrid.items():
 ```
 
 ## Convert to numpy array
+Currently two folders containing the training images and testing images are available. Each image name is formated [grid no.]_[0-23].jpg for training and [grid no.]_[0-5].jpg for testing.
 
 ```python
 from PIL import Image
