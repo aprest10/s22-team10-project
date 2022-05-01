@@ -49,7 +49,7 @@ plt.xlim([-190,-60])
 plt.ylim([15,75])
 plt.show()
 ```
-
+![output](/images/3.png)
 ```python
 plt.plot(mainland[:,1],mainland[:,0])
 plt.show()
