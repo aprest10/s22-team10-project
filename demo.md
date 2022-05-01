@@ -36,7 +36,7 @@ states = gpd.read_file('/path/to/cb_2018_us_nation_5m.shp')
 ```python
 states
 ```
-![output](/images/2.png)<br>
+![output](/images/2.png)<br><br>
 The following code will output the graphical representation of the shapefile.
 ```python
 %%capture --no-display
