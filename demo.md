@@ -28,7 +28,7 @@ import numpy as np
 import pickle
 import gmaps
 ```
-
+Any shapefile can be used depending on the scope of your project. This project is using the nation shapefile from the [U.S. Census Bureau](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html). Note: When working with shapefiles you will have miltiple other files besides the actual shapefile. Please keep these files together, the shapefile will <ins>NOT</ins> work without the other files.
 ```python
 states = gpd.read_file('/path/to/cb_2018_us_nation_5m.shp')
 ```
