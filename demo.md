@@ -345,6 +345,7 @@ for grid,coor in mainlandGrid.items():
 ```
 
 ## Convert to numpy array
+
 Currently two folders containing the training images and testing images are available. Each image name is formated (grid no.) _ (0-23).jpg for training and (grid no.) _ (0-5).jpg for testing.<br><br> These pictures need to be converted into numpy arrays to be used by the model.<br> The structure for the numpy arrays are modeled after the tuple of numpy arrays found in OLA8.
 
 * x_train - holds all of the training images.
