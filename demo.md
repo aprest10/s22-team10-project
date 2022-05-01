@@ -454,7 +454,21 @@ keras.utils.plot_model(model,show_shapes=True,expand_nested=True)
 ## Train model
 [placeholder]
 ## Load model
-[placeholder]
+
+```python
+from keras.models import load_model
+import matplotlib.pyplot as plt
+import numpy as np
+import glob
+from PIL import Image
+import matplotlib.pyplot as plt
+```
+
+```python
+model = load_model('/path/to/model.h5')
+```
+
+
 ## Run test
 [placeholder]
 ## Output
