@@ -200,11 +200,11 @@ pickle.dump(mainlandGrid,open("/to/path/mainlandGrid.pickle","wb"))
 
 To get started with the data scraping, a Google Cloud account is required. We have provided a link below to get you started.
 
-Google Cloud Console: https://console.cloud.google.com
+[Google Cloud Console](https://console.cloud.google.com)
 
 The next step is to set up a Google Street View API set up on your Google Cloud Console. The link below provides details on how you are able to scrape images using your API key. Tutorials can be found on the Google Cloud Console to get your account billing set up, but a free $300 credit was provided by Google at the time of this project.
 
-Google Street View API Overview: https://developers.google.com/maps/documentation/streetview/overview
+[Google Street View API Overview](https://developers.google.com/maps/documentation/streetview/overview)
 
 Now that we have an API key, we can get started with scraping. The key has been left out below, but the variable is still set up for you to paste your new key into. A file directory to store both the training and testing images should be created, and the dataDir variable should store this file path.
 
