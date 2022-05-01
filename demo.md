@@ -559,7 +559,7 @@ In our example the image from index 0 is from grid 0, this can be compared to th
 
 ![Numbered Grid](images/numberedGrid.png)
 
-This code allows us to view the image the model was given. Just replace the 0 with the index number inserted into the predict function above.
+The following code can be used to view the image the model was given. Just replace the 0 with the index number inserted into the predict function above.
 ```python
 # Actual image
 plt.imshow(x_test[0])
