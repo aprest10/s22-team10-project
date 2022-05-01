@@ -35,7 +35,7 @@ states = gpd.read_file('/path/to/cb_2018_us_nation_5m.shp')
 ```python
 states
 ```
-![output][/images/2.png]
+![output](/images/2.png)
 ```python
 %%capture --no-display
 mainland_center = Point(-98.35,39.50)
