@@ -493,8 +493,37 @@ mx
 
 ## Output
 
-[placeholder]
+```python
+# Convert prediction to correct grid number
+fa = 0
 
+if mx <= 1:
+    fa = mx
+elif mx >= 2 and mx <= 11:
+    fa = mx+8
+elif mx == 12:
+    fa = 2
+elif mx >= 13 and mx <= 22:
+    fa = mx+7
+elif mx == 23:
+    fa = 3
+elif mx >= 24 and mx <= 33:
+    fa = mx+6
+elif mx == 34:
+    fa = 4
+elif mx >= 35 and mx <= 44:
+    fa = mx+5
+elif mx == 45:
+    fa = 5
+elif mx >= 46 and mx <= 55:
+    fa = mx+4
+elif mx == 56:
+    fa = 6
+elif mx >= 57 and mx <= 61:
+    fa = mx+3
+else:
+    fa = mx-55
+```
 
 
 ![NUmbered Grid](images/numberedGrid.png)
