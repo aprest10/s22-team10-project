@@ -342,7 +342,16 @@ for grid,coor in mainlandGrid.items():
 ```
 
 ## Convert to numpy array
-Currently two folders containing the training images and testing images are available. Each image name is formated (grid no.) _ (0-23).jpg for training and (grid no.) _ (0-5).jpg for testing.<br><br> These pictures need to be converted into numpy arrays to be used by the model.<br> The structure for the numpy arrays are modeled after the tuple of numpy arrays found in OLA8.<br><br> x_train - holds all of the training images.<br> Expected shape (# of images, width, height, 3)<br> y_train - holds the corresponding grid number for each element in x_train.<br> Expected shape (# of images)<br> x_test - holds all of the testing images.<br> Expected shape (# of images, width, height, 3)<br> y_test - holds the corresponding grid number for each element in x_test.<br> Expected shape (# of images)
+Currently two folders containing the training images and testing images are available. Each image name is formated (grid no.) _ (0-23).jpg for training and (grid no.) _ (0-5).jpg for testing.<br><br> These pictures need to be converted into numpy arrays to be used by the model.<br> The structure for the numpy arrays are modeled after the tuple of numpy arrays found in OLA8.
+
+- x_train - holds all of the training images.
++ Expected shape (# of images, width, height, 3)
+- y_train - holds the corresponding grid number for each element in x_train.
++ Expected shape (# of images)
+- x_test - holds all of the testing images.
++ Expected shape (# of images, width, height, 3)
+- y_test - holds the corresponding grid number for each element in x_test.
++ Expected shape (# of images)
 
 ```python
 from PIL import Image
