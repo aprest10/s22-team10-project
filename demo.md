@@ -57,7 +57,8 @@ Now the mainland can be isolated.
 plt.plot(mainland[:,1],mainland[:,0])
 plt.show()
 ```
-![output](/images/4.png)
+![output](/images/4.png)<br><br>
+Pickle will be used to save this now map of the mainland. Pickle allows for saving of data and loading that same data without the risk of losing progress. The code below shows that the map is saved as [mainland.pickle](geoguessr/data/pickled_data/mainland.pickle) and can that data can then be loaded back unchanged whenever needed.
 ```python
 pickle.dump(mainland,open("/path/to/mainland.pickle","wb"))
 mainland = pickle.load(open("/path/to/mainland.pickle", "rb"))
