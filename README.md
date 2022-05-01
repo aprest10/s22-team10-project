@@ -22,3 +22,6 @@ After scrapping the data we were left with two folders <ins>training_data</ins> 
 
 ##### Model Training
 Using the x_train and y_train arrays we trained up a Convolution Neural Network (CNN). After sucessfully training, the trained model was saved in a '.h5' file. Saving this model this way allows for the reuse of the trained model without losing the weights of the models.
+
+##### Output
+Using the trained model, the x_test data can be loaded into the model and ran. Using the predict() function on the model we can isolate a grid section to see the weights the model predicts it to be. Using the argmax() function on the array of weights gives the index location on the array with the highest weight. This highest weight represtents the best guess given by the model. This index number is then translated into the corresponding grid section the model is guessing. This predicted grid number can be compared
