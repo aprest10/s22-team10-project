@@ -416,6 +416,7 @@ print(y_test)
 ## Create Network Architecture
 
 <p>For this project a <abbr title='Convolution Neural Network'>CNN</abbr></p>
+
 ```python
 import tensorflow.keras as keras
 from tensorflow.keras import backend as K
