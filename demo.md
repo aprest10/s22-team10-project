@@ -95,7 +95,7 @@ plt.plot(x,y,c='g')
 plt.show()
 ```
 ![output](/images/5.png)<br><br>
-The following chunk of code will take the map and grid overlay and perform two functions. The first 
+The following chunk of code will take the map and grid overlay and perform two functions. One function performed will be the combining of the grid and map to prevent and overflow of the grid. The other function will merge sections that are too small with adjacent grids. The magnatude of effect by mergeFactor can be controlled by the value passed to mergeFactor. A larger mergeFactor will result in larger grid sections; while a smaller mergeFactor will result in smaller sections.
 ```python
 def partition(mainland, base, mergeFactor):
     '''
