@@ -199,7 +199,7 @@ The next step is to set up a Google Street View API set up on your Google Cloud 
 
 Google Street View API Overview: https://developers.google.com/maps/documentation/streetview/overview
 
-Now that we have an API key, we can get started with scraping. The key has been left out below, but the variable is still set up for you to paste your new key into. A file directory to store both the training and testing images should be created, and the dataDir variable should store this file path. The code below is utilizing the mainlandGrid.keys to create the list of grids to search for images in. An example is shown to scrape for images in both all grids and for only the first three grids. The count variable allows you to change the number of randomly generated longitudes and latitudes within in grid. The trial variable allows you to attempt scraping an image from (or near) that coordinate a specificed amount of times before moving on. The ignum variable specifies the image number for that grid. For our project, we should 8 locations per grid, so ignum iterates from 0 to 23, and this number is attached to the end of the image file name.
+Now that we have an API key, we can get started with scraping. The key has been left out below, but the variable is still set up for you to paste your new key into. A file directory to store both the training and testing images should be created, and the dataDir variable should store this file path.
 
 ```python
 # Insert API key
@@ -210,6 +210,7 @@ import urllib.request
 import random
 dataDir = "/path/to/training_data"
 ```
+The code below is utilizing the mainlandGrid.keys to create the list of grids to search for images in.An example is shown to scrape for images in both all grids and for only the first three grids.
 
 ```python
 # Data is scraped from all grids
@@ -220,6 +221,9 @@ searchGrids = list(range(0,3))
 print("Search in Grids: {}".format("All" if searchGrids==mainlandGrid.keys() else searchGrids))
 ```
 ![output](/images/7.png)
+
+The count variable allows you to change the number of randomly generated longitudes and latitudes within in grid. The trial variable allows you to attempt scraping an image from (or near) that coordinate a specificed amount of times before moving on. The ignum variable specifies the image number for that grid. For our project, we should 8 locations per grid, so ignum iterates from 0 to 23, and this number is attached to the end of the image file name.
+
 ```python
 base = 'https://maps.googleapis.com/maps/api/streetview'
 ext = '?size=400x200&location={}&fov=100&heading={}&radius={}&pitch=10&key={}'
