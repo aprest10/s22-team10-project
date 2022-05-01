@@ -479,7 +479,7 @@ print('Test loss:', results[0])
 print('Test accuracy:', results[1])
 ```
 
-Print out the probabilites the model created. 65 propabilites are produced, one for each grid section.
+Print out the probabilites the model created. Specific images can be singled out, any index number between 0 and 389 is valid. 65 propabilites are produced for each test image, one for each grid section.
 ```python
 # Predict the grid for image at index 0
 av = model1.predict(x_test[0:1,:,:,:])
