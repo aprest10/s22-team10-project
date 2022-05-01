@@ -4,7 +4,7 @@
 <br>
   
 For a step-by-step guide to the project please see:
->[DEMO](./demo.md)
+>>[DEMO](./demo.md)
 
 ### Overview
 ---
