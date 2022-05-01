@@ -424,4 +424,4 @@ keras.utils.plot_model(model,show_shapes=True,expand_nested=True)
 ```
 ![output](/images/15.png)
 
-![output](/images/num_pic)
+![output](/images/num_pic.png)
