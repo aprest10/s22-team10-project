@@ -66,7 +66,8 @@ mainland = Polygon(np.flip(mainland))
 x,y = mainland.exterior.xy
 plt.plot(x,y)
 ```
-![output](/images/4.png)
+![output](/images/4.png)<br><br>
+Next a grid is overlayed on the map. The number of grids can be adjusted by changing the value of 'base'. Increasing 'base' will decrease the number of grids, while decreasing 'base' will increase the number of grids.
 ```python
 value = mainland.bounds
 base = 4
