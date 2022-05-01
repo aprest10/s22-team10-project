@@ -508,6 +508,7 @@ Using the argmax function we can find the index location with the highest probab
 mx = np.argmax(av)
 mx
 ```
+63
 
 ## Output
 
@@ -550,6 +551,8 @@ The output from this cell will give you the actual grid number the model guessed
 # Model's predicted grid location
 fa
 ```
+8
+
 The numbered map below shows the correspnding location to the grid number.
 
 ![Numbered Grid](images/numberedGrid.png)
