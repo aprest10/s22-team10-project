@@ -493,7 +493,7 @@ mx
 
 ## Output
 
-The index location must now be converted into the correct grid number using the following code. This step is required with how the training and testing images are sorted. Instead of being sorted in proper numerical order i.e.(0,1,2,3,4,5,6,...,65) the images were sorted according to the first number this caused some images to be out of order i.e.(59,6,60,61,62,63,64,7,8,9).
+The index location must now be converted into the correct grid number using the following code. This step is required with how the training and testing images are sorted. Instead of being sorted in proper numerical order i.e.(0,1,2,3,4,5,6,...,64) the images were sorted according to the first number this caused some images to be out of order i.e.(59,6,60,61,62,63,64,7,8,9).
 
 The following code converts the index number to the correct grid number.
 ```python
