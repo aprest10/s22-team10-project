@@ -217,7 +217,7 @@ import urllib.request
 import random
 dataDir = "/path/to/training_data"
 ```
-The code below is utilizing the mainlandGrid.keys to create the list of grids to search for images in.An example is shown to scrape for images in both all grids and for only the first three grids.
+The code below is utilizing the mainlandGrid.keys to create the list of grids to search for images in. An example is shown to scrape for images in both all grids and for only the first three grids.
 
 ```python
 # Data is scraped from all grids
