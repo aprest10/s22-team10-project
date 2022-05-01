@@ -17,7 +17,7 @@ pip install geopandas
 ```python
 pip install gmaps
 ```
-
+The following imports will be needed to create the grid and scrape the data from Google maps.
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
