@@ -527,11 +527,13 @@ elif mx >= 57 and mx <= 61:
 else:
     fa = mx-55
 ```
-
+The output from this cell will give you the actual grid number the model guessed. Looking at same index location in the list of test images will tell you the correct grid number.
 ```python
 # Model's predicted grid location
 fa
 ```
+The numbered map below shows the correspnding location to the grid number.
+
+![Numbered Grid](images/numberedGrid.png)
 
 
-![NUmbered Grid](images/numberedGrid.png)
