@@ -94,7 +94,8 @@ x,y = r.exterior.xy
 plt.plot(x,y,c='g')
 plt.show()
 ```
-![output](/images/5.png)
+![output](/images/5.png)<br><br>
+The following chunk of code will take the map and grid overlay and perform two functions. The first 
 ```python
 def partition(mainland, base, mergeFactor):
     '''
