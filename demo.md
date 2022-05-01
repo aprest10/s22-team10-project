@@ -1,7 +1,5 @@
 <h1 align="center">Demo</h1>
 
-Temp location of link to google drive: https://drive.google.com/drive/folders/1RZKKJQbPvG1PoUpcjkIwt54VZd9Z83LG?usp=sharing
-
 ## Grid Set-up
 
 ---
