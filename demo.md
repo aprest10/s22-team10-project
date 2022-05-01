@@ -191,6 +191,16 @@ pickle.dump(mainlandGrid,open("/to/path/mainlandGrid.pickle","wb"))
 ---
 ### Training data
 
+To get started with the data scraping, a Google Cloud account is required. We have provided a link below to get you started.
+
+Google Cloud Console: https://console.cloud.google.com
+
+The next step is to set up a Google Street View API set up on your Google Cloud Console. The link below provides details on how you are able to scrape images using your API key. Tutorials can be found on the Google Cloud Console to get your account billing set up, but a free $300 credit was provided by Google at the time of this project.
+
+Google Street View API Overview: https://developers.google.com/maps/documentation/streetview/overview
+
+Now that we have an API key, we can get started with scraping. The key has been left out below, but the variable is still set up for you to paste your new key into. A file directory to store both the training and testing images should be created, and the dataDir variable should store this file path. The code below is utilizing the mainlandGrid.keys to create the list of grids to search for images in. An example is shown to scrape for images in both all grids and for only the first three grids. The count variable allows you to change the number of randomly generated longitudes and latitudes within in grid. The trial variable allows you to attempt scraping an image from (or near) that coordinate a specificed amount of times before moving on. The ignum variable specifies the image number for that grid. For our project, we should 8 locations per grid, so ignum iterates from 0 to 23, and this number is attached to the end of the image file name.
+
 ```python
 # Insert API key
 key = ''
