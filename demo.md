@@ -472,18 +472,20 @@ model = load_model('/path/to/model.h5')
 
 ## Run test
 
+Run the trained model using the test data.
 ```python
 results = model1.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', results[0])
 print('Test accuracy:', results[1])
 ```
 
+Print out the probabilites the model created. 65 propabilites are produced, one for each grid section.
 ```python
 # Predict the grid for image at index 0
 av = model1.predict(x_test[0:1,:,:,:])
 print(av)
 ```
-
+Using the argmax function we can find the index location with the highest probability. This index location represents the section the model believe to be correct.
 ```python
 mx = np.argmax(av)
 mx
