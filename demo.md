@@ -186,7 +186,7 @@ plt.show()
 pickle.dump(mainlandGrid,open("/to/path/mainlandGrid.pickle","wb"))
 ```
 
-## Data Scrapping
+## Data Scraping
 
 ---
 ### Training data
