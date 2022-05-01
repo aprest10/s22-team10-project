@@ -15,6 +15,8 @@ We loaded a cartographic boundary shapefile of the U.S. available through the US
 ##### Data Scraping
 Using this map data and [datascraper.ipynb](geoguessr/datascraper.ipynb) we scraped images from Google maps using the Google maps API. For each grid section we scrapped 10 locations (650 location total). For each location we got 3 pictures (1950 pictures total), since Google map images are 360-degree images we used the API to grab an image of size 400px by 200px at 0, 90, and 180-degrees. For Training/Testing we used an 80%/20% split; 8 locations or 24 images per section for training and 2 locations or 6 images per section for testing. The format for labeling each image is [grid no.]_[unique no.].jpg (ex. 0_5.jpg).
 
+>[Source](https://github.com/Nirvan66/geoguessrLSTM): Used this source to model our grid maker and datascraper.
+
 ##### Prepping Data
 After scrapping the data we were left with two folders <ins>training_data</ins> with 1560 unique images and <ins>testing_data</ins> with 390 unique images. In-order to be usable by the model we needed to convert the images into numpy arrays. Using the [load_data.ipynb](geoguessr/load_data.ipynb) file we converted <ins>training_data</ins> images into nparray x_train and <ins>testing_data</ins> images into nparray x_test. We also created nparray y_train and y_test that held the grid section number for each image in its corresponding nparray. This tuple of nparrays were inspired and modeled after the MNIST nparrays used in OLA8 from class.
 
