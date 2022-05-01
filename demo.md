@@ -555,6 +555,8 @@ fa
 
 The numbered map below shows the correspnding location to the grid number.
 
+In our example the image from index 0 is from grid 0, this can be compared to the models best guess grid 8.
+
 ![Numbered Grid](images/numberedGrid.png)
 
 This code allows us to view the image the model was given. Just replace the 0 with the index number inserted into the predict function above.
