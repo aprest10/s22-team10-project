@@ -415,7 +415,7 @@ print(y_test)
 ![output](/images/13.png)
 ## Create Network Architecture
 
-For this project a Convolution Neural Network was used with keras.Sequential(). The use of Sequential allowed for the model to train sucessfully without running into memory issues. Implementing checkpoints was considered but not used
+For this project a Convolution Neural Network was used with keras.Sequential(). The use of Sequential allowed for the model to train sucessfully without running into memory issues. Implementing checkpoints was considered but not used, adding checkpoints would be recommended if attempting to train a more robust version the model.
 
 ```python
 import tensorflow.keras as keras
