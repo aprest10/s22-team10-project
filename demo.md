@@ -455,6 +455,7 @@ keras.utils.plot_model(model,show_shapes=True,expand_nested=True)
 [placeholder]
 ## Load model
 
+Use the load_model command to load the saved trained model in the '.h5' file. 
 ```python
 from keras.models import load_model
 import matplotlib.pyplot as plt
