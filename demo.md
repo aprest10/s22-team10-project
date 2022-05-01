@@ -37,7 +37,7 @@ states = gpd.read_file('/path/to/cb_2018_us_nation_5m.shp')
 states
 ```
 ![output](/images/2.png)<br><br>
-The following code will output the graphical representation of the shapefile.
+The following code will output the graphical representation of the shapefile, with the center of the mainland U.S. marked.
 ```python
 %%capture --no-display
 mainland_center = Point(-98.35,39.50)
