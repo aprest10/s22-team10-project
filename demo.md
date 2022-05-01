@@ -5,6 +5,7 @@ Temp location of link to google drive: https://drive.google.com/drive/folders/1R
 ## Grid Set-up
 
 ---
+Before starting the following three commands should be run to install shapely, geopandas, and gmaps. Shapely and geopandas allows for easier manipulation of our data; while gmaps allows for code integrations with the Google maps API.
 ```python
 pip install shapely
 ```
