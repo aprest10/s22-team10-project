@@ -5,6 +5,8 @@
   
 For a step-by-step guide to the project please see:
 >[DEMO](./demo.md)
+  
+All files can be found under the folder [geoguessr](./geoguessr)
 
 ### Overview
 ---
