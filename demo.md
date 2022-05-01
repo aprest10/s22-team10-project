@@ -449,8 +449,11 @@ model.summary()
 keras.utils.plot_model(model,show_shapes=True,expand_nested=True)
 ```
 ![output](/images/15.png)
+
 ## Train model
+
 [placeholder]
+
 ## Load model
 
 Use the load_model command to load the saved trained model in the '.h5' file. 
@@ -467,10 +470,27 @@ import matplotlib.pyplot as plt
 model = load_model('/path/to/model.h5')
 ```
 
-
 ## Run test
-[placeholder]
+
+```python
+results = model1.evaluate(x_test, y_test, verbose=1)
+print('Test loss:', results[0])
+print('Test accuracy:', results[1])
+```
+
+```python
+# Predict the grid for image at index 0
+av = model1.predict(x_test[0:1,:,:,:])
+print(av)
+```
+
+```python
+mx = np.argmax(av)
+mx
+```
+
 ## Output
+
 [placeholder]
 
 
