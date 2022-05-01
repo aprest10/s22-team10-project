@@ -564,28 +564,32 @@ The following code can be used to view the image the model was given. Just repla
 # Actual image
 plt.imshow(x_test[0])
 ```
+
+![Output](images/out1.png)
+
 The following blocks of code will show the test images available in the grid section the model guessed.
 ```python
 # A picture from the predicted region the picture is from (6 photos for each grid... mx*6 (increment by 1 to get the remaining 5 pictures))
 plt.imshow(x_test[mx*6])
 ```
-
+![Output](images/out2.png)
 ```python
 plt.imshow(x_test[mx*6+1])
 ```
-
+![Output](images/out3.png)
 ```python
 plt.imshow(x_test[mx*6+2])
 ```
-
+![Output](images/out4.png)
 ```python
 plt.imshow(x_test[mx*6+3])
 ```
-
+![Output](images/out5.png)
 ```python
 plt.imshow(x_test[mx*6+4])
 ```
-
+![Output](images/out6.png)
 ```python
 plt.imshow(x_test[mx*6+5])
 ```
+![Output](images/out7.png)
