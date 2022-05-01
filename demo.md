@@ -176,7 +176,7 @@ def plotMap(mainlandGrid):
     fig.add_layer(gmaps.marker_layer(gMarkLoc, info_box_content=gMarkInf))
     return fig
 ```
-
+Call the above code and print the number of sections in the final map. This particualar example will produce 65 sections indexed 0-64.
 ```python
 mainlandGrid = partition(mainland, base, mergeFactor=0.2)
 len(mainlandGrid)
