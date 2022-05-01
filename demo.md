@@ -478,7 +478,7 @@ history = model.fit(dg_trainer,
 ```
 After sucessfully training the model, it can be saved using the save function. Doing so saves the parameters and the weights of the model. Allowing it to be reused.
 ```python
-model.save('model1.h5')
+model.save('model.h5')
 ```
 
 ### Load model
