@@ -415,9 +415,12 @@ y_test = np.array(y_test)
 print(y_test)
 ```
 ![output](/images/13.png)
+
 ## Create Network Architecture
 
 For this project a Convolution Neural Network was used with keras.Sequential(). The use of Sequential allowed for the model to train sucessfully without running into memory issues. Implementing checkpoints was considered but not used, adding checkpoints would be recommended if attempting to train a more robust version the model.
+
+### Network
 
 ```python
 import tensorflow.keras as keras
@@ -452,27 +455,44 @@ keras.utils.plot_model(model,show_shapes=True,expand_nested=True)
 ```
 ![output](/images/15.png)
 
-## Train model
+### Train model
 
-[placeholder]
+Adding a data generator
+```python
+data_generator = keras.preprocessing.image.ImageDataGenerator(
+    width_shift_range=0.1,
+    height_shift_range=0.1,
+    rotation_range=10,
+    zoom_range=0.1,
+    horizontal_flip=False)
+dg_trainer = data_generator.flow(x_train,y_train,
+                                 batch_size=256)
+```
+Training can begin with the training data
+```python
+epochs = 1
+history = model.fit(dg_trainer,
+                    epochs=epochs,
+                    verbose=1,
+                    validation_data = (x_train,y_train))
+```
+After sucessfully training the model, it can be saved using the save function. Doing so saves the parameters and the weights of the model. Allowing it to be reused.
+```python
+model.save('model1.h5')
+```
 
-## Load model
+### Load model
 
 Use the load_model command to load the saved trained model in the '.h5' file. 
 ```python
 from keras.models import load_model
-import matplotlib.pyplot as plt
-import numpy as np
-import glob
-from PIL import Image
-import matplotlib.pyplot as plt
 ```
 
 ```python
 model = load_model('/path/to/model.h5')
 ```
 
-## Run test
+### Run test
 
 Run the trained model using the test data.
 ```python
