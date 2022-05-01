@@ -54,7 +54,7 @@ plt.show()
 plt.plot(mainland[:,1],mainland[:,0])
 plt.show()
 ```
-
+![output](/images/4.png)
 ```python
 pickle.dump(mainland,open("/path/to/mainland.pickle","wb"))
 mainland = pickle.load(open("/path/to/mainland.pickle", "rb"))
@@ -62,6 +62,7 @@ mainland = Polygon(np.flip(mainland))
 x,y = mainland.exterior.xy
 plt.plot(x,y)
 ```
+![output](/images/4.png)
 ```python
 value = mainland.bounds
 base = 4
@@ -88,7 +89,7 @@ x,y = r.exterior.xy
 plt.plot(x,y,c='g')
 plt.show()
 ```
-
+![output](/images/5.png)
 ```python
 def partition(mainland, base, mergeFactor):
     '''
@@ -174,13 +175,13 @@ def plotMap(mainlandGrid):
 mainlandGrid = partition(mainland, base, mergeFactor=0.2)
 len(mainlandGrid)
 ```
-
+65
 ```python
 for i in mainlandGrid.values():
     plt.plot(i[:,1],i[:,0])
 plt.show()
 ```
-
+![output](/images/6.png)
 ```python
 pickle.dump(mainlandGrid,open("/to/path/mainlandGrid.pickle","wb"))
 ```
@@ -208,7 +209,7 @@ dataDir = "/path/to/training_data"
 searchGrids = list(range(0,3))
 print("Search in Grids: {}".format("All" if searchGrids==mainlandGrid.keys() else searchGrids))
 ```
-
+![output](/images/7.png)
 ```python
 base = 'https://maps.googleapis.com/maps/api/streetview'
 ext = '?size=400x200&location={}&fov=100&heading={}&radius={}&pitch=10&key={}'
@@ -331,11 +332,11 @@ filelist = glob.glob('/path/to/training_data/*.jpg')
 x_train = np.array([np.array(Image.open(fname)) for fname in filelist])
 print(x_train.shape)
 ```
-
+![output](/images/8.png)
 ```python
 plt.imshow(x_train[6])
 ```
-
+![output](/images/9.png)
 ```python
 # Load testing data images
 filelist = glob.glob('/path/to/testing_data/*.jpg')
@@ -345,11 +346,11 @@ filelist = glob.glob('/path/to/testing_data/*.jpg')
 x_test = np.array([np.array(Image.open(fname)) for fname in sorted(filelist)])
 print(x_test.shape)
 ```
-
+![output](/images/10.png)
 ```python
 plt.imshow(x_test[0])
 ```
-
+![output](/images/11.png)
 ## Create y_train and y_test
 
 ```python
@@ -362,7 +363,7 @@ y_train = np.array(y_train)
 ```python
 print(y_train)
 ```
-
+![output](/images/12.png)
 ```python
 y_test = []
 for j in range(390):
@@ -373,7 +374,7 @@ y_test = np.array(y_test)
 ```python
 print(y_test)
 ```
-
+![output](/images/13.png)
 ## Create Network Architecture
 
 ```python
@@ -403,7 +404,8 @@ metrics=[keras.metrics.SparseCategoricalAccuracy()])
 
 model.summary()
 ```
-
+![output](/images/14.png)
 ```python
 keras.utils.plot_model(model,show_shapes=True,expand_nested=True)
 ```
+![output](/images/15.png)
