@@ -187,7 +187,8 @@ for i in mainlandGrid.values():
     plt.plot(i[:,1],i[:,0])
 plt.show()
 ```
-![output](/images/6.png)
+![output](/images/6.png)<br><br>
+The final grid can be seen above. This map is now saved into a pickle file for use later.
 ```python
 pickle.dump(mainlandGrid,open("/to/path/mainlandGrid.pickle","wb"))
 ```
