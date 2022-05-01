@@ -352,7 +352,7 @@ Currently two folders containing the training images and testing images are avai
     * Expected shape (# of images, width, height, 3)
 * y_test - holds the corresponding grid number for each element in x_test.
     * Expected shape (# of images)
-
+#### Create x_train and x_test
 ```python
 from PIL import Image
 import glob
