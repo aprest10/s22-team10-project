@@ -536,4 +536,52 @@ The numbered map below shows the correspnding location to the grid number.
 
 ![Numbered Grid](images/numberedGrid.png)
 
+This code allows us to view the image the model was given. Just replace the 0 with the index number inserted into the predict function above.
+```python
+# Actual image
+plt.imshow(x_test[0])
+```
 
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
