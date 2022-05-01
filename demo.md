@@ -348,6 +348,8 @@ for grid,coor in mainlandGrid.items():
 
 Currently two folders containing the training images and testing images are available. Each image name is formated (grid no.) _ (0-23).jpg for training and (grid no.) _ (0-5).jpg for testing.<br><br> These pictures need to be converted into numpy arrays to be used by the model.<br> The structure for the numpy arrays are modeled after the tuple of numpy arrays found in OLA8.
 
+Creating your numpy arrays is encuraged but premade arrays can be found on [Google Drive](https://drive.google.com/drive/folders/1RZKKJQbPvG1PoUpcjkIwt54VZd9Z83LG?usp=sharing) while available.
+
 * x_train - holds all of the training images.
     * Expected shape (# of images, width, height, 3)
 * y_train - holds the corresponding grid number for each element in x_train.
