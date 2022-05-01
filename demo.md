@@ -227,8 +227,7 @@ The code below is utilizing the mainlandGrid.keys to create the list of grids to
 searchGrids = list(range(0,3))
 print("Search in Grids: {}".format("All" if searchGrids==mainlandGrid.keys() else searchGrids))
 ```
-![output](/images/7.png)
-
+![output](/images/7.png)<br><br>
 We have specified that each image scraped will be 400x200 pixels. The location will be randomly generated using poly.bounds as the range for these numbers. The count variable allows you to change the number of locations to search for within in grid. The trial variable allows you to attempt scraping an image from (or near) that coordinate a specificed amount of times before moving on. The ignum variable specifies the image number for that grid. For our project, we should 8 locations per grid, so ignum iterates from 0 to 23 becuase we are scraping images with a heading of 0, 90, and 180 degrees. This number is attached to the end of the image file name to ensure you scrape the same number of images of images per location. If the scraping does not work for a specified grid, you can add a conditional in the while loop to look like grid==gridMissing and it will only scrape images for that one grid location. You will also need to update the while loop to reflect the number of images you are missing  (i.e. count<3 would mean you need 3 more image locations).
 
 ```python
